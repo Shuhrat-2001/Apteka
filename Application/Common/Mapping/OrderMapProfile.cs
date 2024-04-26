@@ -3,6 +3,8 @@ using Contract.Requests.Orderrequests;
 using Domain.Entities;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Diagnostics.Contracts;
+using Domain.Entity;
+using Contracts.Responses;
 
 namespace Application.Common.Mapping
 {
@@ -11,7 +13,7 @@ namespace Application.Common.Mapping
         public OrderMapProfile()
         {
             CreateMap<CreateOrderRequests, Order>();
-            CreateMap<Order, Contract.Responses.SingleOrderResponse>();
+            CreateMap<Order, SingleOrderResponse>();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Contracts.Responses
 {
-    public record SingleMedicationResposes
+    public record SingleMedicationResponses
     {
         public int Name { get; set; }
         public decimal Price { get; set; }

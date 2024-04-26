@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Contract.Requests.MedicationRequests;
 using Contract.Responses;
+using Contracts.Responses;
 using Domain.Entities;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 

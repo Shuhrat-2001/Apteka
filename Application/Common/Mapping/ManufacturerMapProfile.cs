@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
-using Contract.Requests.AuthorRequests;
-using Contract.Responses;
+using Contract.Requests.ManufacturerRequests;
+using Contracts.Responses;
 using Domain.Entities;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Application.Common.Mapping
 {
@@ -10,8 +9,8 @@ namespace Application.Common.Mapping
     {
         public ManufacturerMapProfile()
         {
-            CreateMap<CreateManufacturerRequest, Manufacturer>();
-            CreateMap<Manufacturer, SingleManufacturerResponse>();
+            CreateMap<CreateManufacturerRequests, Manufacturer>();
+            CreateMap<Manufacturer, SingleManufacturerResponses>();
         }
     }
 }
