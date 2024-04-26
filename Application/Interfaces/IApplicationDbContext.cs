@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
@@ -8,8 +9,6 @@ namespace Application.Interfaces
     {
         DbSet<Medication> medications { get; set; }
         DbSet<Manufacturer> Manufacturers { get; set; }
-        DbSet<Order> GetOrders();
-        void SetOrders(DbSet<Order> value);
         DbSet<Customer> Customers { get; set; }
         DbSet<Employee> Employees { get; set; }
         DbSet<Position> Positions { get; set; }

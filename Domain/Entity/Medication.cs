@@ -1,4 +1,5 @@
-﻿using Domain.Enum;
+﻿using Domain.Entity;
+using Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,8 @@ namespace Domain.Entities
         public Types Types { get; set; }
         public TypeOfMedication TypeOfMedication { get; set; }
         public int PeriodOfUse { get; set; }
-        public GroupOfMedicine GroupOfMedicine { get; set; }
-        public Guid GroupOfMedicineId { get; set; }
+        public GroupOfMedication GroupOfMedication { get; set; }
+        public Guid GroupOfMedicationId { get; set; }
         public Manufacturer Manufacturer { get; set; }
         public Guid ManufacturerId { get; set; }
 

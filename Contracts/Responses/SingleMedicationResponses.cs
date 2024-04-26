@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Contracts.Responses
         public int Quantity { get; set; }
         public DateTime DateOfProduction { get; set; }
         public int PeriodOfUse { get; set; }
-        public TipeOfMedicine TipeOfMedicine { get; set; }
+        public TypeOfMedication TypeOfMedication { get; set; }
         public Types Types { get; set; }
         public Guid GroupOfMedicationId { get; set; }
         public Guid ManufacturerId { get; set; }

@@ -10,5 +10,6 @@ namespace Domain.Entity
     public class GroupOfMedication:BaseEntity
     {
         public string name { get; set; }
+        public object Medications { get; set; }
     }
 }
